@@ -19,7 +19,7 @@ Full list of publications can be seen at my [Google Scholar](https://scholar.goo
 
 <h3 align="right"> AI and Stereo Photogrammetry for Low-Cost River Digital Twin Generation</h3>
 
-<img src="img/tree.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
+<img src="img/onsight.jpg" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
@@ -29,7 +29,7 @@ Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
 
 ### Deep learning for river water velocity and discharge estimation 
 
-<img src="img/tree.png" align="left" width="250" style="margin-right: 15px; margin-bottom: 10px;">
+<img src="img/pipss-ezgif.com-optimize.gif" align="left" width="250" style="margin-right: 25px; margin-bottom: 10px;">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
