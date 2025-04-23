@@ -37,7 +37,7 @@ Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor
 Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
 <br clear="left">
 
-<h3 align="right"> Scalable Flower Mapping and 3D Tree Reconstruction Using Gaussian Splatting </h3>
+<h3 align="right"> Scalable Flower Mapping and 3D Tree Reconstruction Using Gaussian Splatting and Deep learning </h3>
 
 <img src="img/DJI_20230502105140_0003_SUPR_prediciton.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
 
@@ -60,7 +60,7 @@ Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
 
 <h3 align="right">LTSM BRAZIL </h3>
 
-<img src="img/DJI_20230502105140_0003_SUPR_prediciton.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
+<img src="img/lstm.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
@@ -71,7 +71,7 @@ Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
 
 ### Eucaliptus
 
-<img src="img/tree.png" align="left" width="250" style="margin-right: 15px; margin-bottom: 10px;">
+<img src="img/treee2.png" align="left" width="250" style="margin-right: 15px; margin-bottom: 10px;">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
@@ -81,7 +81,7 @@ Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
 
 <h3 align="right"> ZIM </h3>
 
-<img src="img/DJI_20230502105140_0003_SUPR_prediciton.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
+<img src="img/zim.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
