@@ -3,12 +3,36 @@ I am an Environmental Engineer with a strong academic background, including a Ma
 
 During my Ph.D., I applied Machine Learning and Deep Learning techniques to address complex environmental problems, combining technological innovation with sustainable environmental management. I bring a skill set that integrates research, advanced data analysis, and field practices, contributing to developing effective, evidence-based solutions for environmental challenges.
 
-Highly motivated and committed to achieving my professional and academic goals. Leadership, curiosity, and demonstrating strong communicative skills are key values of mine. Ease of working both individually and in groups. Passionate about innovation, artificial intelligence, environment and motivated towards continuous learning.
 ## On going project
-```
-<img align="left" width="100" height="100" src=/img/tree.png>
-```
----
+
+<h3 align="right"> AI and Stereo Photogrammetry for Low-Cost River Digital Twin Generation</h3>
+
+<img src=/img/tree.png align="right" width="250" style="left-right: 15px; margin-bottom: 10px;">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. 
+Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
+
+Suspendisse potenti. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, 
+metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
+
+<br clear="right">
+
+### Urban individual tree mapping using deep learning and high resolution multi modal data
+
+<img src=/img/tree.png align="left" width="250" style="margin-right: 15px; margin-bottom: 10px;">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. 
+Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
+
+Suspendisse potenti. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, 
+metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
+
+<br clear="left">
+
 ## Publications
 Full list of publications can be seen at my [Google Scholar](https://scholar.google.com/citations?user=ceCzploAAAAJ&hl=de). 
 
