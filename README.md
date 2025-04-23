@@ -19,7 +19,7 @@ Full list of publications can be seen at my [Google Scholar](https://scholar.goo
 
 <h3 align="right"> AI and Stereo Photogrammetry for Low-Cost River Digital Twin Generation</h3>
 
-<img src="img/onsight.jpg" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
+<img src="img/onsight.jpg" align="right" width="300" style="margin-left: 20px; margin-bottom: 10px;">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
@@ -39,7 +39,7 @@ Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
 
 <h3 align="right"> Scalable Flower Mapping and 3D Tree Reconstruction Using Gaussian Splatting and Deep learning </h3>
 
-<img src="img/DJI_20230502105140_0003_SUPR_prediciton.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
+<img src="img/DJI_20230502105140_0003_SUPR_prediciton.png" align="right" width="300" style="margin-left: 20px; margin-bottom: 10px;">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
