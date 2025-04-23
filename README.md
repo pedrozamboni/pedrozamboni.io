@@ -7,7 +7,7 @@ During my Ph.D., I applied Machine Learning and Deep Learning techniques to addr
 
 <h3 align="right"> AI and Stereo Photogrammetry for Low-Cost River Digital Twin Generation</h3>
 
-<img src=/img/tree.png align="right" width="250" style="left-right: 15px; margin-bottom: 10px;">
+<img src=img/tree.png align="right" width="250" style="left-right: 15px; margin-bottom: 10px;">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
@@ -21,7 +21,7 @@ metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget 
 
 ### Urban individual tree mapping using deep learning and high resolution multi modal data
 
-<img src=/img/tree.png align="left" width="250" style="margin-right: 15px; margin-bottom: 10px;">
+<img src=img/tree.png align="left" width="250" style="margin-right: 15px; margin-bottom: 10px;">
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
