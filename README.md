@@ -5,7 +5,10 @@ During my Ph.D., I applied Machine Learning and Deep Learning techniques to addr
 
 Highly motivated and committed to achieving my professional and academic goals. Leadership, curiosity, and demonstrating strong communicative skills are key values of mine. Ease of working both individually and in groups. Passionate about innovation, artificial intelligence, environment and motivated towards continuous learning.
 ## On going project
-
+```
+<img align="left" width="100" height="100" src=/img/tree.png>
+```
+---
 ## Publications
 Full list of publications can be seen at my [Google Scholar](https://scholar.google.com/citations?user=ceCzploAAAAJ&hl=de). 
 
