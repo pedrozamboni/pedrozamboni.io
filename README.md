@@ -13,10 +13,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum fac
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
 Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. 
 Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
-
-Suspendisse potenti. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, 
-metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
-
 <br clear="right">
 
 ### Urban individual tree mapping using deep learning and high resolution multi modal data
@@ -27,11 +23,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum fac
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
 Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. 
 Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
-
-Suspendisse potenti. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, 
-metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.
-
 <br clear="left">
+
+<h3 align="right"> Scalable Flower Mapping and 3D Tree Reconstruction Using Gaussian Splatting </h3>
+
+<img src="img/DJI_20230502105140_0003_SUPR_prediciton.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. 
+Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
+
+<br clear="right">
 
 ## Publications
 Full list of publications can be seen at my [Google Scholar](https://scholar.google.com/citations?user=ceCzploAAAAJ&hl=de). 
