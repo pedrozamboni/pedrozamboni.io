@@ -95,3 +95,7 @@ Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
 - M.S., Environmental technology | Federal University of Mato Grosso do Sul  (_2019_)	 		 			        		
 - B.S., Environmental Engineering | Federal University of Mato Grosso do Sul  (_2017_)
 
+## Contact
+Email : pedro.zamboni@tu-dresden.de
+
+Linkedin : [https://www.linkedin.com/in/pedro-zamboni/](https://www.linkedin.com/in/pedro-zamboni/)
