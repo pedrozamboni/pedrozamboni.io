@@ -80,16 +80,16 @@ This project explores the use of low-cost fisheye cameras combined with AI and p
 
 <h3 align="right"> Automated fusion and classification of ALS and UAV data for the creation of heavy rain hazard maps  </h3>
 
-
+## Teaching
+- Object detection and geodata fusion - Master in Geoinformatics (TU Dresden)-
+  - Pyhthon, point cloud processing, and deep learning for computer vision  
 
 ## Education
 - PhD, Environmental technology | Federal University of Mato Grosso do Sul  (_2024_)	 						       		
 - M.S., Environmental technology | Federal University of Mato Grosso do Sul  (_2019_)	 		 			        		
 - B.S., Environmental Engineering | Federal University of Mato Grosso do Sul  (_2017_)
 
-## Teaching
-- Object detection and geodata fusion - Master in Geoinformatics (TU Dresden)-
-  - Pyhthon, point cloud processing, and deep learning for computer vision  
+
   
 ## Contact
 Email : pedro.zamboni@tu-dresden.de
