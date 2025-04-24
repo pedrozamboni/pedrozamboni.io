@@ -24,6 +24,7 @@ Full list of publications can be seen at my [Google Scholar](https://scholar.goo
 [Zamboni, P., Junior, J.M., Silva, J.D.A., Miyoshi, G.T., Matsubara, E.T., Nogueira, K.; GonCAlves, W.N. Benchmarking Anchor-Based and Anchor-Free State-of-the-Art Deep Learning Methods for In- dividual Tree Detection in RGB High-Resolution Images. Remote Sens. 2021, 13, 2482](https://www.mdpi.com/2072-4292/13/13/2482)
 
 ## On going project
+<h3 align="right"> Automated fusion and classification of ALS and UAV data for the creation of heavy rain hazard maps  </h3>
 
 <img src="img/zim.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
 
@@ -79,7 +80,6 @@ This project focuses on developing and evaluating training strategies for applyi
 This project explores the use of low-cost fisheye cameras combined with AI and photogrammetry to detect and count individual eucalyptus trees. Fisheye images offer a major advantage with their wide field of view, allowing large portions of the canopy to be captured in a single frame—ideal for forest monitoring. However, the heavy lens distortion poses challenges for standard deep learning object detection methods, which must be carefully evaluated and adapted for this image type. The project focuses on training and assessing deep learning models for accurate tree detection in fisheye imagery. Detected tree regions are then integrated into the photogrammetric process to guide dense point cloud generation, filtering out irrelevant background and isolating only tree structures. This targeted approach enables accurate 3D reconstruction and counting of individual trees, offering an efficient and affordable method for forest inventory and monitoring.
 <br clear="left">
 
-<h3 align="right"> Automated fusion and classification of ALS and UAV data for the creation of heavy rain hazard maps  </h3>
 
 ## Teaching
 - Object detection and geodata fusion - Master in Geoinformatics (TU Dresden)-
