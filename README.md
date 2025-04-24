@@ -1,4 +1,4 @@
-# Pedro Zamboni, Ph.D
+
 I am an Environmental Engineer with a strong academic background, including a Master's and Ph.D. in Water Resources and Sanitation. I worked for 5 years in the HEroS (Hydrology, Erosion and Sediments) Research and Laboratory Group, focused on water and soil conservation studies. I gained extensive experience in fieldwork, rainfall simulation for soil loss and infiltration studies, assessment of water and soil conservation systems, and hydro-sedimentological monitoring.
 
 During my Ph.D., I applied Machine Learning and Deep Learning techniques to address complex environmental problems, combining technological innovation with sustainable environmental management. I bring a skill set that integrates research, advanced data analysis, and field practices, contributing to developing effective, evidence-based solutions for environmental challenges.
