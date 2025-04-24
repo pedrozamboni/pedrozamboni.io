@@ -24,6 +24,19 @@ Full list of publications can be seen at my [Google Scholar](https://scholar.goo
 
 ## On going project
 
+<img src="img/zim.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
+
+This project aims to merge both DEM types with a robust method for aligning point clouds and automated integration of UAV-recognized structures, enhancing accuracy and coverage for runoff simulations to provide municipalities with up-to-date, informative heavy rain risk maps.
+[Project link](https://tu-dresden.de/bu/umwelt/geo/ipf/geosensorsysteme/forschung/forschungsprojekte/uav-srgk-entwicklung-eines-verfahrens-zur-automatisierten-fusion-und-klassifikation-von-als-und-uav-daten-zur-erstellung-von-starkre-gengefahrenkarten?set_language=en)
+<br clear="right">
+
+### Deep Learning-Driven Mapping of Individual Urban Trees with High-Resolution Multimodal Data
+
+<img src="img/tree.png" align="left" width="250" style="margin-right: 15px; margin-bottom: 10px;">
+
+This project focuses on mapping individual trees in urban environments using deep learning and high-resolution multimodal data, such as aerial imagery, LiDAR, and multispectral inputs. By leveraging AI, the system can accurately detect, classify, and localize trees at the individual level, supporting urban planning, green space monitoring, and environmental analysis with high spatial precision.
+<br clear="left">
+
 <h3 align="right"> AI and Stereo Photogrammetry for Low-Cost River Digital Twin Generation</h3>
 
 <img src="img/onsight.jpg" align="right" width="300" style="margin-left: 20px; margin-bottom: 10px;">
@@ -49,12 +62,6 @@ This project combines AI and UAV imagery to detect and analyze flowers in trees 
 
 <br clear="right">
 
-### Deep Learning-Driven Mapping of Individual Urban Trees with High-Resolution Multimodal Data
-
-<img src="img/tree.png" align="left" width="250" style="margin-right: 15px; margin-bottom: 10px;">
-
-This project focuses on mapping individual trees in urban environments using deep learning and high-resolution multimodal data, such as aerial imagery, LiDAR, and multispectral inputs. By leveraging AI, the system can accurately detect, classify, and localize trees at the individual level, supporting urban planning, green space monitoring, and environmental analysis with high spatial precision.
-<br clear="left">
 
 <h3 align="right">LSTM4Flow-BR: Training Strategies for Multi-Scale Discharge Estimation </h3>
 
@@ -73,11 +80,7 @@ This project explores the use of low-cost fisheye cameras combined with AI and p
 
 <h3 align="right"> Automated fusion and classification of ALS and UAV data for the creation of heavy rain hazard maps  </h3>
 
-<img src="img/zim.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
 
-This project aims to merge both DEM types with a robust method for aligning point clouds and automated integration of UAV-recognized structures, enhancing accuracy and coverage for runoff simulations to provide municipalities with up-to-date, informative heavy rain risk maps.
-[Project link](https://tu-dresden.de/bu/umwelt/geo/ipf/geosensorsysteme/forschung/forschungsprojekte/uav-srgk-entwicklung-eines-verfahrens-zur-automatisierten-fusion-und-klassifikation-von-als-und-uav-daten-zur-erstellung-von-starkre-gengefahrenkarten?set_language=en)
-<br clear="right">
 
 ## Education
 - PhD, Environmental technology | Federal University of Mato Grosso do Sul  (_2024_)	 						       		
