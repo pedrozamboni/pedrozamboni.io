@@ -65,11 +65,11 @@ This project combines AI and UAV imagery to detect and analyze flowers in trees 
 <br clear="right">
 
 
-<h3 align="right">LSTM4Flow-BR: Training Strategies for Multi-Scale Discharge Estimation </h3>
+<h3 align="right">AI4Flow-BR: Training Strategies for Multi-Scale Discharge Estimation </h3>
 
 <img src="img/lstm.png" align="right" width="250" style="margin-left: 20px; margin-bottom: 10px;">
 
-This project focuses on developing and evaluating training strategies for applying LSTM models to river discharge estimation at different spatial and temporal scales across Brazil. It emphasizes student learning and capacity building, combining hands-on experience with deep learning techniques and hydrological modeling. The goal is to explore how scalable LSTM approaches can improve discharge predictions in diverse Brazilian river basins while fostering the next generation of researchers in environmental A
+This project focuses on developing and evaluating training strategies for applying LSTM and Transformers models to river discharge estimation at different spatial and temporal scales across Brazil. It emphasizes student learning and capacity building, combining hands-on experience with deep learning techniques and hydrological modeling. The goal is to explore how scalable deep learning approaches can improve discharge predictions in diverse Brazilian river basins while fostering the next generation of researchers in environmental A
 
 <br clear="right">
 
