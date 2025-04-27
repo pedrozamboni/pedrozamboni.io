@@ -3,7 +3,7 @@ I am an Environmental Engineer with a strong academic background, including a Ma
 
 During my Ph.D., I applied Machine Learning and Deep Learning techniques to address complex environmental problems, combining technological innovation with sustainable environmental management. I bring a skill set that integrates research, advanced data analysis, and field practices, contributing to developing effective, evidence-based solutions for environmental challenges.
 
-I currently work as a researcher at the Geosensor Systems group at the Dreden University of Technology (Germany). I have a strong interest in developing methods combining photogrammetry with deep learning to advance low-cost monitoring systems. Also, in the use of deep learning for prediction of environmental systems.
+I currently work as a researcher at the Geosensor Systems group at the Dresden University of Technology (Germany). I have a strong interest in developing methods combining photogrammetry with deep learning to advance low-cost monitoring systems. Also, in the use of deep learning for prediction of environmental systems.
 
 ## From the Terminal
 I’m starting something a little different—my very own monthly newsletter. This will be a space where I share thoughts, behind-the-scenes glimpses of what I’m working on, bits of inspiration, and whatever else I find meaningful.
