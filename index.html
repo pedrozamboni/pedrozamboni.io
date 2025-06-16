@@ -7,11 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #1a1a1a;
-            --secondary-color: #333;
-            --text-color: #1a1a1a;
-            --light-bg: #ffffff;
-            --border-color: #e0e0e0;
+            --max-width: 800px;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            --color-text: #24292e;
+            --color-bg: #ffffff;
+            --color-border: #e1e4e8;
+            --color-link: #0366d6;
         }
 
         * {
@@ -21,40 +22,37 @@
         }
 
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            line-height: 1.8;
-            color: var(--text-color);
-            max-width: 900px;
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--color-text);
+            max-width: var(--max-width);
             margin: 0 auto;
-            padding: 2rem;
-            background-color: #fafafa;
+            padding: 3rem 1rem;
+            background-color: var(--color-bg);
         }
 
         header {
-            margin-bottom: 5rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 2rem;
+            margin-bottom: 4rem;
+            text-align: center;
         }
 
         h1 {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
         }
 
         h2 {
-            font-size: 1.8rem;
-            color: var(--secondary-color);
-            margin: 3rem 0 1.5rem 0;
+            font-size: 1.75rem;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid var(--color-border);
             font-weight: 600;
         }
 
         h3 {
-            font-size: 1.4rem;
-            color: var(--secondary-color);
-            margin: 2rem 0 1rem 0;
+            font-size: 1.25rem;
+            margin: 1.5rem 0 1rem;
             font-weight: 600;
         }
 
@@ -69,16 +67,19 @@
         }
 
         .project {
-            margin-bottom: 4rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border-color);
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
         }
 
         .project img {
             max-width: 100%;
             height: auto;
-            margin: 1.5rem 0;
-            border: 1px solid var(--border-color);
+            margin: 1rem 0;
+            border: 1px solid var(--color-border);
+            border-radius: 3px;
         }
 
         .project-content {
@@ -87,6 +88,7 @@
 
         .project h3 {
             margin-top: 0;
+            color: var(--color-text);
         }
 
         .publications {
@@ -94,55 +96,64 @@
         }
 
         .publication {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: var(--light-bg);
-            border: 1px solid var(--border-color);
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
         }
 
         a {
-            color: #0366d6;
+            color: var(--color-link);
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
-            color: #0246a2;
         }
 
         .contact {
-            margin-top: 4rem;
+            text-align: center;
+            margin-top: 3rem;
             padding: 2rem;
-            border-top: 1px solid var(--border-color);
+            border-top: 1px solid var(--color-border);
         }
 
         .intro {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 2rem;
         }
 
         ul {
             list-style-type: none;
             padding-left: 0;
+            margin: 1rem 0;
         }
 
         li {
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
             line-height: 1.6;
         }
 
         section {
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 2rem auto;
         }
 
         @media (max-width: 768px) {
             body {
-                padding: 1rem;
+                padding: 1.5rem 1rem;
             }
             
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
         }
     </style>
