@@ -7,11 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --accent-color: #3498db;
-            --text-color: #333;
-            --light-bg: #f8f9fa;
+            --primary-color: #1a1a1a;
+            --secondary-color: #333;
+            --text-color: #1a1a1a;
+            --light-bg: #ffffff;
+            --border-color: #e0e0e0;
         }
 
         * {
@@ -21,37 +21,41 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.8;
             color: var(--text-color);
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
+            background-color: #fafafa;
         }
 
         header {
-            margin-bottom: 4rem;
-            text-align: center;
+            margin-bottom: 5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: var(--primary-color);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: var(--secondary-color);
-            margin: 2.5rem 0 1.5rem 0;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
+            margin: 3rem 0 1.5rem 0;
+            font-weight: 600;
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: var(--secondary-color);
             margin: 2rem 0 1rem 0;
+            font-weight: 600;
         }
 
         p {
@@ -65,26 +69,24 @@
         }
 
         .project {
-            background: var(--light-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 2rem;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .project img {
-            max-width: 300px;
-            border-radius: 4px;
+            max-width: 100%;
+            height: auto;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border-color);
         }
 
         .project-content {
-            flex: 1;
+            margin-top: 1rem;
         }
 
-        .project.right {
-            flex-direction: row-reverse;
+        .project h3 {
+            margin-top: 0;
         }
 
         .publications {
@@ -92,39 +94,55 @@
         }
 
         .publication {
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
-            border-left: 3px solid var(--accent-color);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--light-bg);
+            border: 1px solid var(--border-color);
         }
 
         a {
-            color: var(--accent-color);
+            color: #0366d6;
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
+            color: #0246a2;
         }
 
         .contact {
-            text-align: center;
             margin-top: 4rem;
             padding: 2rem;
-            background: var(--light-bg);
-            border-radius: 8px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        section {
+            margin-bottom: 4rem;
         }
 
         @media (max-width: 768px) {
-            .project {
-                flex-direction: column;
+            body {
+                padding: 1rem;
             }
             
-            .project.right {
-                flex-direction: column;
-            }
-            
-            .project img {
-                max-width: 100%;
+            h1 {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -133,13 +151,16 @@
     <header>
         <h1>Pedro Zamboni, Ph.D</h1>
         <div class="intro">
-            <p>Environmental Engineer with expertise in Water Resources and Sanitation. Currently working as a researcher at the Geosensor Systems group at Dresden University of Technology (Germany), focusing on photogrammetry and deep learning for environmental monitoring systems.</p>
+            <p>Environmental Engineer and Researcher<br>
+            Geosensor Systems Group<br>
+            Dresden University of Technology (Germany)</p>
+            <p>Expertise in Water Resources, Deep Learning, and Environmental Monitoring Systems</p>
         </div>
     </header>
 
     <section>
-        <h2>From the Terminal</h2>
-        <p>I'm starting something a little different—my very own monthly newsletter. This will be a space where I share thoughts, behind-the-scenes glimpses of what I'm working on, bits of inspiration, and whatever else I find meaningful.</p>
+        <h2>About</h2>
+        <p>Environmental Engineer with expertise in Water Resources and Sanitation. Currently working as a researcher at the Geosensor Systems group at Dresden University of Technology (Germany), focusing on photogrammetry and deep learning for environmental monitoring systems.</p>
     </section>
 
     <section>
