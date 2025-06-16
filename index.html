@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Zamboni, Ph.D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin: 2.5rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin: 2rem 0 1rem 0;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .project {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .project img {
+            max-width: 300px;
+            border-radius: 4px;
+        }
+
+        .project-content {
+            flex: 1;
+        }
+
+        .project.right {
+            flex-direction: row-reverse;
+        }
+
+        .publications {
+            margin: 2rem 0;
+        }
+
+        .publication {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            background: var(--light-bg);
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .project {
+                flex-direction: column;
+            }
+            
+            .project.right {
+                flex-direction: column;
+            }
+            
+            .project img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pedro Zamboni, Ph.D</h1>
+        <div class="intro">
+            <p>Environmental Engineer with expertise in Water Resources and Sanitation. Currently working as a researcher at the Geosensor Systems group at Dresden University of Technology (Germany), focusing on photogrammetry and deep learning for environmental monitoring systems.</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>From the Terminal</h2>
+        <p>I'm starting something a little different—my very own monthly newsletter. This will be a space where I share thoughts, behind-the-scenes glimpses of what I'm working on, bits of inspiration, and whatever else I find meaningful.</p>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        <p>Full list of publications can be seen at my <a href="https://scholar.google.com/citations?user=ceCzploAAAAJ&hl=de" target="_blank">Google Scholar</a>.</p>
+        
+        <div class="publications">
+            <div class="publication">
+                <p>Zamboni, P., Blumlein, M., Lenz, J., Gonçalves, W. N., Junior, J. M., Wöhling, T., Eltner, A. (2025). Measuring water ponding time, location and connectivity on soil surfaces using time-lapse images and deep learning. Catena, 254. <a href="https://doi.org/10.1016/j.catena.2025.108919" target="_blank">DOI</a></p>
+            </div>
+            <div class="publication">
+                <p>Zamboni, P., Gorriz, X. B., Junior, J. M., Goncalves, X. N., Eltner, A. (2024). Do we need to label large datasets for river water segmentation? Benchmark and stage estimation with minimum to non-labeled image time series. International Journal of Remote Sensing, 1–29. <a href="https://doi.org/10.1080/01431161.2025.2457131" target="_blank">DOI</a></p>
+            </div>
+            <div class="publication">
+                <p>Zamboni, P., Junior, J.M., Silva, J.D.A., Miyoshi, G.T., Matsubara, E.T., Nogueira, K.; GonCAlves, W.N. (2021). Benchmarking Anchor-Based and Anchor-Free State-of-the-Art Deep Learning Methods for Individual Tree Detection in RGB High-Resolution Images. Remote Sens. 13, 2482. <a href="https://www.mdpi.com/2072-4292/13/13/2482" target="_blank">DOI</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ongoing Projects</h2>
+        
+        <div class="project right">
+            <img src="img/zim.png" alt="Heavy rain hazard maps project">
+            <div class="project-content">
+                <h3>Automated fusion and classification of ALS and UAV data for heavy rain hazard maps</h3>
+                <p>This project aims to merge both DEM types with a robust method for aligning point clouds and automated integration of UAV-recognized structures, enhancing accuracy and coverage for runoff simulations to provide municipalities with up-to-date, informative heavy rain risk maps.</p>
+                <a href="https://tu-dresden.de/bu/umwelt/geo/ipf/geosensorsysteme/forschung/forschungsprojekte/uav-srgk-entwicklung-eines-verfahrens-zur-automatisierten-fusion-und-klassifikation-von-als-und-uav-daten-zur-erstellung-von-starkre-gengefahrenkarten" target="_blank">Project link</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="img/tree.png" alt="Urban Trees Mapping">
+            <div class="project-content">
+                <h3>Deep Learning-Driven Mapping of Individual Urban Trees</h3>
+                <p>This project focuses on mapping individual trees in urban environments using deep learning and high-resolution multimodal data, such as aerial imagery, LiDAR, and multispectral inputs. The system can accurately detect, classify, and localize trees at the individual level, supporting urban planning, green space monitoring, and environmental analysis.</p>
+            </div>
+        </div>
+
+        <div class="project right">
+            <img src="img/onsight.jpg" alt="River Digital Twin">
+            <div class="project-content">
+                <h3>AI and Stereo Photogrammetry for Low-Cost River Digital Twin Generation</h3>
+                <p>This research proposes using a stereo camera setup to directly create 3D river cross-sections from image pairs, eliminating the need for pre-existing models. The innovation combines AI with stereo-photogrammetry to improve image matching and handle 3D reconstruction from raw images.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="img/pipss-ezgif.com-optimize.gif" alt="River Velocity Estimation">
+            <div class="project-content">
+                <h3>Deep learning for river water velocity and discharge estimation</h3>
+                <p>This project uses AI to estimate river water velocity and calculate discharge by learning patterns directly from image sequences. The approach reduces the need for manual adjustments and adapts better to varying environmental conditions.</p>
+            </div>
+        </div>
+
+        <div class="project right">
+            <img src="img/DJI_20230502105140_0003_SUPR_prediciton.png" alt="Flower Mapping">
+            <div class="project-content">
+                <h3>AI and 3D Photogrammetry for Flower Mapping</h3>
+                <p>This project combines AI and UAV imagery to detect and analyze flowers in trees at both landscape and individual tree levels, creating a scalable, precise system for floral monitoring using AI-driven detection and 3D photogrammetric analysis.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="img/lstm.png" alt="AI4Flow-BR">
+            <div class="project-content">
+                <h3>AI4Flow-BR: Training Strategies for Multi-Scale Discharge Estimation</h3>
+                <p>This project develops and evaluates training strategies for applying LSTM and Transformers models to river discharge estimation across Brazil, combining deep learning techniques with hydrological modeling while fostering the next generation of researchers.</p>
+            </div>
+        </div>
+
+        <div class="project right">
+            <img src="img/treee2.png" alt="Eucalyptus Trees Counting">
+            <div class="project-content">
+                <h3>Counting Eucalyptus Trees with AI and Fisheye Photogrammetry</h3>
+                <p>This project explores the use of low-cost fisheye cameras combined with AI and photogrammetry to detect and count individual eucalyptus trees, offering an efficient and affordable method for forest inventory and monitoring.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Teaching</h2>
+        <p>Object detection and geodata fusion - Master in Geoinformatics (TU Dresden)</p>
+        <ul>
+            <li>Python, point cloud processing, and deep learning for computer vision</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>PhD, Environmental technology | Federal University of Mato Grosso do Sul (2024)</li>
+            <li>M.S., Environmental technology | Federal University of Mato Grosso do Sul (2019)</li>
+            <li>B.S., Environmental Engineering | Federal University of Mato Grosso do Sul (2017)</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:pedro.zamboni@tu-dresden.de">pedro.zamboni@tu-dresden.de</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/pedro-zamboni/" target="_blank">pedro.zamboni</a></p>
+    </section>
+</body>
+</html>
