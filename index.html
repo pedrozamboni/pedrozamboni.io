@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Zamboni | Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --bg-soft: #111c36;
+            --panel: rgba(17, 28, 54, 0.82);
+            --panel-border: rgba(255, 255, 255, 0.12);
+            --text: #e5edf8;
+            --muted: #a9b8d0;
+            --accent: #7dd3fc;
+            --accent-2: #c4b5fd;
+            --shadow: 0 24px 80px rgba(2, 6, 23, 0.45);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(125, 211, 252, 0.16), transparent 30%),
+                radial-gradient(circle at top right, rgba(196, 181, 253, 0.14), transparent 28%),
+                linear-gradient(160deg, #08101f 0%, #0f172a 45%, #111827 100%);
+            min-height: 100vh;
+        }
+
+        .page {
+            width: min(1120px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding: 2rem 0 4rem;
+        }
+
+        .hero {
+            display: grid;
+            gap: 1.5rem;
+            padding: 3rem;
+            border: 1px solid var(--panel-border);
+            border-radius: 28px;
+            background: linear-gradient(180deg, rgba(17, 28, 54, 0.9), rgba(17, 28, 54, 0.72));
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(18px);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: auto -10% -35% auto;
+            width: 22rem;
+            height: 22rem;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(125, 211, 252, 0.22), transparent 65%);
+            pointer-events: none;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            width: fit-content;
+            padding: 0.45rem 0.8rem;
+            border-radius: 999px;
+            border: 1px solid rgba(125, 211, 252, 0.24);
+            background: rgba(125, 211, 252, 0.08);
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.5rem, 6vw, 4.8rem);
+            line-height: 0.98;
+            letter-spacing: -0.05em;
+        }
+
+        .hero p {
+            margin: 0;
+            max-width: 70ch;
+            color: var(--muted);
+            font-size: 1.08rem;
+            line-height: 1.75;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.9rem 1.15rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid transparent;
+            transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+        }
+
+        .button.primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            color: #09111f;
+        }
+
+        .button.secondary {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: var(--panel-border);
+            color: var(--text);
+        }
+
+        .button:hover {
+            transform: translateY(-1px);
+            border-color: rgba(125, 211, 252, 0.35);
+        }
+
+        section {
+            margin-top: 2rem;
+        }
+
+        .section-title {
+            margin: 0 0 1rem;
+            font-size: 1rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            padding: 1.35rem;
+            border-radius: 20px;
+            border: 1px solid var(--panel-border);
+            background: var(--panel);
+            box-shadow: 0 16px 40px rgba(2, 6, 23, 0.2);
+            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(125, 211, 252, 0.35);
+            background: rgba(17, 28, 54, 0.94);
+        }
+
+        .card h2 {
+            margin: 0 0 0.55rem;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .card a {
+            display: inline-flex;
+            margin-top: 1rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .list {
+            display: grid;
+            gap: 0.7rem;
+            padding: 1.25rem;
+            border: 1px solid var(--panel-border);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--muted);
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--muted);
+        }
+
+        .contact a {
+            color: var(--text);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(229, 237, 248, 0.25);
+        }
+
+        @media (max-width: 760px) {
+            .page {
+                width: min(100% - 1rem, 1120px);
+                padding-top: 0.5rem;
+            }
+
+            .hero {
+                padding: 1.5rem;
+                border-radius: 22px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="hero">
+            <span class="eyebrow">Single Pages repo</span>
+            <h1>Pedro Zamboni, Ph.D</h1>
+            <p>
+                Environmental Engineer focused on water resources, sanitation, photogrammetry, and deep learning for environmental monitoring systems.
+                This repo now keeps the personal landing page and the project pages together under one GitHub Pages site.
+            </p>
+            <div class="actions">
+                <a class="button primary" href="#projects">Open project pages</a>
+                <a class="button secondary" href="mailto:pedro.zamboni@tu-dresden.de">Contact</a>
+            </div>
+        </header>
+
+        <section id="projects">
+            <h2 class="section-title">Project pages</h2>
+            <div class="grid">
+                <article class="card">
+                    <h2>Water Ponding Analysis</h2>
+                    <p>Deep learning for measuring ponding time, location, and connectivity on soil surfaces from time-lapse imagery.</p>
+                    <a href="pond/">Open page</a>
+                </article>
+
+                <article class="card">
+                    <h2>Stereo River Monitoring</h2>
+                    <p>Stereo photogrammetry for river water level and cross-section updates using classical and deep learning approaches.</p>
+                    <a href="stereo_camera/">Open page</a>
+                </article>
+
+                <article class="card">
+                    <h2>Urban Tree Mapping</h2>
+                    <p>Supervised deep learning and semi-automatic label generation for dense tree cadaster mapping.</p>
+                    <a href="tree_paper/">Open page</a>
+                </article>
+
+                <article class="card">
+                    <h2>Streamflow Prediction in Brazil</h2>
+                    <p>LSTM-based basin-scale and regionally grouped streamflow estimation across Brazil.</p>
+                    <a href="lstm_brazil/">Open page</a>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Research areas</h2>
+            <div class="list">
+                <div>Water resources, hydrology, and environmental monitoring</div>
+                <div>Photogrammetry, LiDAR, and multimodal remote sensing</div>
+                <div>Deep learning for segmentation, detection, and prediction</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Contact</h2>
+            <div class="contact">
+                <span>Email: <a href="mailto:pedro.zamboni@tu-dresden.de">pedro.zamboni@tu-dresden.de</a></span>
+                <span>LinkedIn: <a href="https://www.linkedin.com/in/pedro-zamboni/" target="_blank" rel="noreferrer">pedro-zamboni</a></span>
+                <span>Google Scholar: <a href="https://scholar.google.com/citations?user=ceCzploAAAAJ&hl=de" target="_blank" rel="noreferrer">profile</a></span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

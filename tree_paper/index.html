@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stereo Photogrammetry for River Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bringing the gap between sparse and dense tree cadaster using supervised deep learning and semi automatic label generation</h1>
+        <div class="authors">
+            <p>
+                <a href="#">Pedro Alberto Pereira Zamboni</a>
+            </p>
+        </div>
+        <div class="affiliations">
+            <p>Institute of Photogrammetry and Remote Sensing, Dresden University of Technology, Dresden, Germany</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#results">Results</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Urban tree inventories are essential for sustainable city planning, biodiversity conservation, and climate resilience. However, conventional tree cadaster mapping remains labor-intensive and spatially limited. In this study, we propose a novel semi-automatic pipeline that combines open-access urban tree inventories, LiDAR-derived canopy height models (CHMs), and multispectral aerial imagery to generate dense, high-quality labels for supervised deep learning models. Using data from Dresden, Germany, we first created a sparse training dataset with CHM-derived crowns filtered by official cadasters. A preliminary "dummy" model was then used to infer dense tree crowns, which were manually refined to produce a high-quality dense dataset. Five state-of-the-art object detection models—including anchor-free, anchor-based, and transformer-based architectures—were trained and evaluated across six input band combinations. The best models were applied to both Dresden and Leipzig, the latter serving as an independent test site to assess model generalizability. Results demonstrate that models trained with RGB, NIR, and CHM inputs achieved the highest accuracy (mAP50 > 0.79) and transferability, with anchor-free models like ATSS and FSAF outperforming others. This study bridges the gap between sparse and dense tree cadastres, providing an efficient, scalable framework for urban forestry mapping at city-wide scales.</p>
+
+        </section>
+
+        <section id="methodology">
+            <h2>Methodology</h2>
+            <div class="image-container">
+                <img src="images/image14.png" alt="Methodology Overview">
+                <p class="caption">Methodology Overview</p>
+                <p>Initially, tree cadastres and the canopy height model (CHM) from the city of Dresden were utilized in conjunction with PyCrown (cite) to generate a sparse tree dataset. Subsequently, this dataset was employed to train a supervised deep learning model for tree detection, henceforth referred to as the Dummy model. The trained Dummy model was employed to perform inference across the entire Dresden dataset, generating a dense pseudo-label dataset. A limited human intervention was introduced to manually correct the model's predictions, resulting in a densely annotated tree dataset. This refined dataset constituted the basis for training five distinct object detection models. During this training phase, six different band combinations were evaluated as input to the models. Consequently, the model demonstrating the most favorable outcomes for each combination of bands was implemented to map individual tree crowns in both Dresden and Leipzig. Lastly, a comparative analysis was conducted between the resulting tree maps and the official tree cadastres for each city.
+
+
+                </p>
+            
+        </section>
+
+        <section id="results">
+            <h2>Initial Results</h2>
+            <h3>Deep learning model and input evaluation</h3>
+            <section id="results">
+            <div class="image-row">
+                <div class="image-container">
+                    <img src="images/image11.png" alt="Z-coordinate Comparison">
+                    <p class="caption">mAP for all models using all six different band combinations.</p>
+                </div>
+                 <div class="image-container">
+                    <img src="images/image12.png" alt="Z-coordinate Comparison">
+                    <p class="caption">mAP50 for all models using all six different band combinations.</p>
+                </div>
+            </div>
+            
+             <div class="image-row">
+                <div class="image-item">
+                    <img src="images/image19.png" alt="Z-coordinate Comparison">
+                    <p class="caption">mAP50 models statistical analysis.</p>
+                </div>
+                <div class="image-item">
+                    <img src="images/image20.png" alt="Water Level and Discharge Measurement">
+                    <p class="caption">mAP50 input band combination statistical analysis. </p>
+                </div>
+            </div>
+             
+
+            <h3>Dresden and Leipzig tree maps</h3>
+              <div class="image-row">
+                <div class="image-item">
+                    <img src="images/image34.png" alt="Z-coordinate Comparison">
+                    <p class="caption">Dresden tree heatmap. Around 1.2 millions trees in the city.</p>
+                </div>
+                <div class="image-item">
+                    <img src="images/image4.png" alt="Water Level and Discharge Measurement">
+                    <p class="caption">Trees per Dresden districts. </p>
+                </div>
+            </div>
+
+            <div class="image-row">
+                <div class="image-item">
+                    <img src="images/image18.png" alt="Z-coordinate Comparison">
+                    <p class="caption">Leipzig tree heatmap. Around 900 thousand trees in the city.</p>
+                </div>
+                <div class="image-item">
+                    <img src="images/image1.png" alt="Water Level and Discharge Measurement">
+                    <p class="caption">Trees per Leipzig districts. </p>
+                </div>
+            </div>
+
+         <h2>More yet to come....</h2>
+
+        </section>
+
+    
+    </main>
+
+    <footer>
+        <p>© 2025 Author(s). This work is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a></p>
+
+    </footer>
+</body>
+</html>

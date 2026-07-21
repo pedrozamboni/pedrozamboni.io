@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Ponding Analysis with Deep Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Measuring water ponding time, location and connectivity on soil surfaces using time-lapse images and deep learning</h1>
+        <div class="authors">
+            <p>
+                <a href="#">Pedro Zamboni</a><sup>a</sup>,
+                <a href="#">Mikesch Blümlein</a><sup>a</sup>,
+                <a href="#">Jonas Lenz</a><sup>a,b</sup>,
+                <a href="#">Wesley Nunes Gonçalves</a><sup>c,d</sup>,
+                <a href="#">Jose Marcato Junior</a><sup>c</sup>,
+                <a href="#">Thomas Wöhling</a><sup>e</sup>,
+                <a href="#">Anette Eltner</a><sup>a</sup>
+            </p>
+        </div>
+        <div class="affiliations">
+            <p><sup>a</sup>Institution 1</p>
+            <p><sup>b</sup>Institution 2</p>
+            <p><sup>c</sup>Institution 3</p>
+            <p><sup>d</sup>Institution 4</p>
+            <p><sup>e</sup>Institution 5</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#abstract">Abstract</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#code">Code</a>
+        <a href="#data">Data</a>
+        <a href="#keywords">Keywords</a>
+        <a href="https://doi.org/10.1016/j.catena.2025.108919">Paper</a>
+    </nav>
+
+    <main>
+        <section id="highlights">
+            <h2>Highlights</h2>
+            <ul>
+                <li>Deep learning can be used for direct spatial–temporal mapping of water ponds.</li>
+                <li>Class imbalance and label uncertainty are key factors during model training.</li>
+                <li>Ensemble models produced more robust results.</li>
+                <li>Different water ponding timing and intensity behaviors were found across areas.</li>
+                <li>Measuring changes in pond connectivity increases the knowledge of runoff formation.</li>
+            </ul>
+        </section>
+
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <p>Rainfall simulations are an established method to gain knowledge on small-scale hydrological processes like infiltration, ponding and the formation of surface runoff. Due to limitations in measuring methods, these processes must usually be understood to happen homogeneously within the bounded plot area while it is well known that they actually vary on a subplot scale.</p>
+            
+            <p>Within this study we took high resolution time-lapse images of several plots to observe and quantify the subplot processes of ponding and the formation of connectivity and surface runoff. We investigated the potential of deep learning in the segmentation of water ponding areas in time-lapse images during rainfall simulations and to estimate the ponding time.</p>
+            
+            <p>We trained three different Convolutional Neural Networks (CNNs), considering classification uncertainty and imbalance of the ground-truth data (water pixels) as well as ensemble modeling and spatial correlation between samples. Our findings suggest that addressing ground-truth annotation uncertainty and imbalance was more important in our study than the choice of the CNNs itself, and ensemble models increase the model performance leading to more robust predictions.</p>
+            
+            <p>Overall, our results suggest that CNNs have great potential to segment ponding areas, and thus it is possible to observe their spatio-temporal evolution. When comparing the evolution of water ponding areas to runoff, different behaviors across the plots were observable, which could be related to differences in initial soil moisture and infiltration behaviors. Further, our image-based deep learning approach allows for direct measurement of the ponding time and can be considered a first step to spatially and temporally resolved mapping of infiltration rates.</p>
+        </section>
+
+        <section id="code">
+            <h2>Code</h2>
+            <p>This repository contains the implementation of our deep learning approach for water ponding analysis. The code includes:</p>
+            <ul>
+                <li>CNN models for water pond segmentation</li>
+                <li>Training pipeline with uncertainty and imbalance handling</li>
+                <li>Ensemble model implementation</li>
+                <li>Analysis scripts for ponding time and connectivity</li>
+            </ul>
+            <div class="buttons">
+                <a href="https://github.com/pedrozamboni/pond_paper" class="button">View on GitHub</a>
+            </div>
+        </section>
+
+        <section id="data">
+            <h2>Data</h2>
+            <p>Our dataset includes:</p>
+            <ul>
+                <li>High-resolution time-lapse images of soil plots</li>
+                <li>Ground-truth annotations for water ponding areas</li>
+                <li>Runoff measurements and soil moisture data</li>
+                <li>Trained model weights and configurations</li>
+            </ul>
+            <div class="buttons">
+                <a href="https://github.com/pedrozamboni/pond_paper/tree/main/data" class="button">Access Dataset</a>
+            </div>
+        </section>
+
+        <section id="keywords">
+            <h2>Keywords</h2>
+            <div class="keywords">
+                <span>Convolution neural networks</span>
+                <span>Infiltration process</span>
+                <span>Water ponding</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 The Author(s). Published by Elsevier B.V.</p>
+        <p>DOI: <a href="https://doi.org/10.1016/j.catena.2025.108919">10.1016/j.catena.2025.108919</a></p>
+    </footer>
+</body>
+</html>
