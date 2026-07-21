@@ -3,119 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stereo Photogrammetry for River Monitoring</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Brazil Streamflow Prediction | Pedro Zamboni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../project-template.css">
 </head>
-<body>
-    <header>
-        <h1>Computing streamflow from hydrological basin similar groups and country scale via deep learning </h1>
-        <div class="authors">
-            <p>
-                <a href="#">Pedro Alberto Pereira Zamboni</a>
-            </p>
-        </div>
-        <div class="affiliations">
-            <p>Institute of Photogrammetry and Remote Sensing, Dresden University of Technology, Dresden, Germany</p>
-        </div>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#methodology">Methodology</a>
-        <a href="#results">Results</a>
-    </nav>
-
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>The application of deep learning in hydrology has demonstrated promising results in recent years, particularly with the use of Long Short-Term Memory (LSTM) networks for streamflow prediction. However, large-scale implementations remain underexplored in many regions, including Brazil. This study presents the first comprehensive assessment of LSTM-based streamflow modeling across Brazilian catchments using the CABra dataset, comprising 660 basins. We evaluate the performance of LSTM and Entity-Aware LSTM (EA-LSTM) models under two spatial strategies: a country-scale approach and regionally grouped catchments based on hydrological similarity. Models were trained using multiple combinations of dynamic inputs and validated through five-fold cross-validation, leave-one-group-out strategies, and independent test sets. Results show that country-scale models generally outperform region-specific models, particularly in humid regions and large catchments, while performance declines in arid areas with non-perennial rivers. Moreover, increasing the number of dynamic inputs does not consistently improve performance, suggesting potential issues with multicollinearity. The study highlights the feasibility and limitations of large-sample deep learning hydrological modeling in data-sparse environments and provides insights into model generalizability and transferability across diverse hydroclimatic regions.</p>
-
-        </section>
-
-        <section id="methodology">
-            <h2>Methodology</h2>
-            <div class="image-container">
-                <img src="images/image28.jpg" alt="Methodology Overview">
-                <p class="caption">Methodology Overview</p>
-                <p>We utilized a Long Short-Term Memory (LSTM) network for streamflow prediction, leveraging the CABra dataset of 660 Brazilian basins.
-                    We trained models in three different configurations: country-scale, regionally grouped by hydrological similarity, and using a leave-one-group-out strategies.
-                    On the country-scale, we trained models on all basins, while the regionally grouped approach involved training on catchments with similar hydrological characteristics.
-                    The leave-one-group-out strategy was trained by iteratively leaving out one catchment group for testing while training on the remaining groups.
-
-                </p>
-            </div>
-            <div class="image-container">
-                <img src="images/image5.png" alt="Country scale model">
-                <p class="caption">Country scale model</p>
-                <p>We proceeded to train country-level models using five-fold cross-validation, repeating each fold three times with different random seeds. This approach allowed us to evaluate two key aspects: the effect of varying training catchments—since each fold excludes a different 20% subset of basins—and the influence of stochasticity arising from random initialization. Subsequently, the most optimal model was evaluated on both the training and test catchments during the designated test period, ensuring the test set was independent in both time and space. Additionally, within the test catchments, we assessed the model's performance across each hydrological group individually. Finally, we evaluated the impact of different dynamic input configurations and model types using the optimized hyperparameters. Four distinct combinations of dynamic inputs were tested: (1) precipitation only; (2) precipitation and potential evapotranspiration calculated using the Penman-Monteith method; (3) precipitation, minimum and maximum temperature, relative humidity, wind speed, solar radiation, and evapotranspiration; and (4) all aforementioned variables plus potential evapotranspiration calculated using the Penman-Monteith method. Each configuration's performance was assessed on the test set during the designated test period to analyze the influence of dynamic inputs on model accuracy.</p>
-            </div>
-
-            <div class="image-container">
-                <img src="images/image3.png" alt="Regionally grouped by hydrological similarity models">
-                <p class="caption">Regionally grouped by hydrological similarity models</p>
-                <p>Brazil is a country with significant environmental heterogeneity, exhibiting a wide variety of biomes and hydroclimatic characteristics.A recent analysis of catchment-scale streamflow signatures revealed the presence of six distinct hydrological groups within Brazil's catchments (Almagro et al., 2024). These groups exhibited similar hydrologic behavior and characteristics, displaying a spatial cluster pattern. To further explore the similarities among these catchments, we developed individual models for each group. To this end, we initiated a preliminary training phase to establish model hyperparameters for each group. The selection of the most suitable hyperparameters was made for each group, and subsequently, we proceeded to train an individual model for each group. The evaluation of these models was conducted on the test catchment of each group during the designated test period. A comparison of the results obtained from these models with the country-scale model was also undertaken. Furthermore, a model trained on one was applied to the rest to assess model transferability and generalizability. </p>
-            </div>
-
-            <div class="image-container">
-                <img src="images/image23.png" alt="Leave-one-group-out strategy">
-                <p class="caption">Leave-one-group-out strategy</p>
-                <p>The utilization of an independent test set is imperative for the precise evaluation of a deep learning model's capacity for generalization across unseen data, thereby averting the occurrence of overly optimistic performance estimates. This approach enables a more accurate reflection of the models' potential to discern and extrapolate hydrological behavior across disparate regions.In this study, a leave-one-out strategy was employed, leveraging the six hydrological groups, with five groups utilized for model training and one for evaluation. This approach yielded an independent test set, thereby ensuring that any potential correlation between the training and test catchments was eliminated. Each hydrological group was utilized once as the test set, with the objective being to ascertain whether a specific combination of groups would produce superior results in comparison to the others. </p>
-
-
-        </section>
-
-        <section id="results">
-            <h2>Results & Applications</h2>
-            <h3>Country-Scale Model Performance</h3>
-            <section id="results">
-            <div class="image-row">
-                <div class="image-item">
-                    <img src="images/image12.png" alt="Z-coordinate Comparison">
-                    <p class="caption">Performance on the training catchments over the test period of time.</p>
-                    <p> Mean NSE of 0.557 with median of 0.658. Mean KGE of 0.637, with median of 0.690. </p>
+<body data-theme="brazil">
+    <div class="page">
+        <header class="hero">
+            <span class="eyebrow">Research project</span>
+            <div class="hero-grid">
+                <div>
+                    <h1>Computing streamflow from hydrological basin similar groups and country scale via deep learning</h1>
+                    <p class="subtitle">Large-sample hydrological modeling across Brazilian catchments using LSTM and EA-LSTM approaches under country-scale and region-based strategies.</p>
+                    <div class="facts">
+                        <div class="fact"><strong>Dataset</strong><span>CABra, 660 basins</span></div>
+                        <div class="fact"><strong>Models</strong><span>LSTM and EA-LSTM</span></div>
+                        <div class="fact"><strong>Strategies</strong><span>Country-scale and grouped</span></div>
+                        <div class="fact"><strong>Region</strong><span>Brazil</span></div>
+                    </div>
+                    <div class="actions" style="margin-top:1.1rem;">
+                        <a class="button primary" href="#results">See results</a>
+                        <a class="button secondary" href="#methodology">View method</a>
+                    </div>
                 </div>
-                <div class="image-item">
-                    <img src="images/image24.png" alt="Water Level and Discharge Measurement">
-                    <p class="caption">Performance on the training catchments over the test period of time. </p>
+                <aside class="hero-panel">
+                    <h2>Author</h2>
+                    <p class="authors" style="margin:0;line-height:1.75;">Pedro Alberto Pereira Zamboni</p>
+                    <h2 style="margin-top:1rem;">Institution</h2>
+                    <p class="affiliations" style="margin:0;line-height:1.75;">Institute of Photogrammetry and Remote Sensing, Dresden University of Technology</p>
+                </aside>
+            </div>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#methodology">Methodology</a>
+                <a href="#results">Results</a>
+                <a href="#gallery">Gallery</a>
+                <a href="../">Home</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <section id="about" class="section">
+                <h2>Overview</h2>
+                <p>This study presents the first comprehensive assessment of LSTM-based streamflow modeling across Brazilian catchments using the CABra dataset. We evaluate country-scale and hydrologically grouped strategies with multiple dynamic input configurations and cross-validation schemes.</p>
+                <p>The results show that country-scale models generally perform better in humid regions and large catchments, while performance declines in arid areas with non-perennial rivers. Increasing the number of dynamic inputs does not always improve performance, suggesting possible multicollinearity issues.</p>
+            </section>
+
+            <section id="methodology" class="section">
+                <h2>Methodology</h2>
+                <div class="grid">
+                    <article class="link-card">
+                        <h3>Country-scale</h3>
+                        <p>Five-fold cross-validation across all basins with repeated random seeds.</p>
+                    </article>
+                    <article class="link-card">
+                        <h3>Hydrological groups</h3>
+                        <p>Separate models trained for catchments with similar hydrological behavior.</p>
+                    </article>
+                    <article class="link-card">
+                        <h3>Leave-one-group-out</h3>
+                        <p>Independent testing by withholding one hydrological group at a time.</p>
+                    </article>
+                    <article class="link-card">
+                        <h3>Input evaluation</h3>
+                        <p>Four dynamic input combinations to examine model sensitivity and transferability.</p>
+                    </article>
                 </div>
-            </div>
-            
-             <div class="image-row">
-                <div class="image-item">
-                    <img src="images/image27.png" alt="Z-coordinate Comparison">
-                    <p class="caption">Performance on the test catchments over the test period of time.</p>
-                    <p> Mean NSE of 0.442 with median of 0.590. Mean KGE of 0.554, with median of 0.626. </p>
+            </section>
+
+            <section id="results" class="section">
+                <h2>Results</h2>
+                <div class="facts" style="grid-template-columns:repeat(2,minmax(0,1fr));">
+                    <div class="fact"><strong>Country-scale</strong><span>Strong overall performance in humid regions</span></div>
+                    <div class="fact"><strong>Grouped models</strong><span>Useful for transferability analysis</span></div>
                 </div>
-                <div class="image-item">
-                    <img src="images/image13.png" alt="Water Level and Discharge Measurement">
-                    <p class="caption">Performance on the test catchments over the test period of time. </p>
+                <p style="margin-top:1rem;">The study highlights the feasibility and limitations of large-sample deep learning hydrological modeling in data-sparse environments.</p>
+            </section>
+
+            <section id="gallery" class="section">
+                <h2>Visual summary</h2>
+                <div class="image-grid">
+                    <article class="figure-card">
+                        <h3>Training strategies</h3>
+                        <p class="caption">Country-scale, grouped, and leave-one-group-out training workflows.</p>
+                    </article>
+                    <article class="figure-card">
+                        <h3>Performance comparison</h3>
+                        <p class="caption">Model behavior across basins, regions, and input combinations.</p>
+                    </article>
                 </div>
-            </div>
-             <div class="image-container">
-                <img src="images/Slide1.PNG" alt="Regionally grouped by hydrological similarity models">
-                <p class="caption">Impact of dynamic input and model size on the performacne of the test catchment on the test perid of time</p>
-            </div>
+            </section>
+        </main>
 
-            <h3>Hydrologically similar group models performance</h3>
-             <div class="image-container">
-                <img src="images/Slide2.PNG" alt="Regionally grouped by hydrological similarity models">
-                <p class="caption">Performance per hydrological group of the test catchment on the test period of time</p>
-            </div>
-             <div class="image-container">
-                <img src="images/Slide3.PNG" alt="Regionally grouped by hydrological similarity models">
-                <p class="caption">Comparison between country-scale models and model per hydrological group on the test period of time</p>
-            </div>
-
-         <h2>More yet to come....</h2>
-
-        </section>
-
-    
-    </main>
-
-    <footer>
-        <p>© 2025 Author(s). This work is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a></p>
-
-    </footer>
+        <footer class="footer">
+            <p>© 2025 Author(s). Distributed under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">Creative Commons Attribution 4.0 License</a> · <a href="../">Back to home</a></p>
+        </footer>
+    </div>
 </body>
 </html>

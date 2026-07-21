@@ -3,117 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stereo Photogrammetry for River Monitoring</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Stereo River Monitoring | Pedro Zamboni</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../project-template.css">
 </head>
-<body>
-    <header>
-        <h1>Stereo photogrammetry for river water level and cross-section update: classical and deep learning approaches</h1>
-        <div class="authors">
-            <p>
-                <a href="#">Pedro Alberto Pereira Zamboni</a>,
-                <a href="#">Robert Krüger</a>,
-                <a href="#">Anette Eltner</a>
-            </p>
-        </div>
-        <div class="affiliations">
-            <p>Institute of Photogrammetry and Remote Sensing, Dresden University of Technology, Dresden, Germany</p>
-        </div>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#methodology">Methodology</a>
-        <a href="#results">Results</a>
-        <a href="#info">Event Info</a>
-        <a href="https://doi.org/10.5194/egusphere-egu25-9375">Paper</a>
-    </nav>
-
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>Traditional water level monitoring relies on intrusive gauging methods like pressure gauges, which are vulnerable to loss during intense floods. Camera gauges have emerged as a promising alternative, offering remote sensing capabilities and safer installation options. However, common single-camera setups require additional information such as 3D models and ground control points.</p>
-            
-            <p>This research introduces a novel approach using stereo-photogrammetry with two cameras. This setup eliminates the need for pre-existing 3D models, requiring only the distance between cameras (baseline) and interior camera geometry. The method enables direct 3D reconstruction of river cross-sections and water levels, supporting both traditional photogrammetric techniques and modern deep learning approaches.</p>
-        </section>
-
-        <section id="methodology">
-            <h2>Methodology</h2>
-            <div class="image-container">
-                <img src="images/Slide5.PNG" alt="Classical Stereo Processing Pipeline">
-                <p class="caption">Classical stereo processing pipeline showing the key steps in stereo reconstruction</p>
+<body data-theme="river">
+    <div class="page">
+        <header class="hero">
+            <span class="eyebrow">Research project</span>
+            <div class="hero-grid">
+                <div>
+                    <h1>Stereo photogrammetry for river water level and cross-section update: classical and deep learning approaches</h1>
+                    <p class="subtitle">A stereo-camera workflow that removes the need for pre-existing 3D models and supports direct reconstruction of water levels and river cross-sections.</p>
+                    <div class="facts">
+                        <div class="fact"><strong>Event</strong><span>EGU General Assembly 2025</span></div>
+                        <div class="fact"><strong>Location</strong><span>Vienna, Austria</span></div>
+                        <div class="fact"><strong>Focus</strong><span>River cross-sections and water levels</span></div>
+                        <div class="fact"><strong>DOI</strong><span>10.5194/egusphere-egu25-9375</span></div>
+                    </div>
+                    <div class="actions" style="margin-top:1.1rem;">
+                        <a class="button primary" href="https://doi.org/10.5194/egusphere-egu25-9375" target="_blank" rel="noreferrer">Read paper</a>
+                        <a class="button secondary" href="https://meetingorganizer.copernicus.org/EGU25/session/53961" target="_blank" rel="noreferrer">Session link</a>
+                    </div>
+                </div>
+                <aside class="hero-panel">
+                    <h2>Authors</h2>
+                    <p class="authors" style="margin:0;line-height:1.75;">Pedro Alberto Pereira Zamboni, Robert Krüger, Anette Eltner</p>
+                    <h2 style="margin-top:1rem;">Approach</h2>
+                    <p class="affiliations" style="margin:0;line-height:1.75;">Classical stereo processing paired with deep-learning-based matching for river monitoring.</p>
+                </aside>
             </div>
-            <div class="image-container">
-                <img src="images/Slide9.PNG" alt="Deep Learning Stereo Processing">
-                <p class="caption">Deep learning approach utilizing neural networks for improved feature matching</p>
-            </div>
-        </section>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#methodology">Methodology</a>
+                <a href="#results">Results</a>
+                <a href="#info">Event info</a>
+                <a href="https://doi.org/10.5194/egusphere-egu25-9375" target="_blank" rel="noreferrer">Paper</a>
+            </nav>
+        </header>
 
-        <section id="results">
-            <h2>Results & Applications</h2>
-            <div class="image-container">
-                <img src="images/Slide10.PNG" alt="Z-coordinate Comparison">
-                <p class="caption">Validation: Z-coordinate comparison between models and reference points</p>
-            </div>
-            <div class="image-container">
-                <img src="images/Slide14.PNG" alt="Water Level and Discharge Measurement">
-                <p class="caption">Practical application: Water level and discharge measurement system</p>
-            </div>
-        </section>
+        <main class="content">
+            <section id="about" class="section">
+                <h2>Overview</h2>
+                <p>Traditional water level monitoring relies on intrusive gauging methods like pressure gauges, which can fail during intense floods. Camera gauges offer a remote and safer alternative, but single-camera setups often need 3D models and ground control points.</p>
+                <p>This research uses stereo photogrammetry with two cameras. The setup removes the need for a pre-existing 3D model and only requires the camera baseline and interior geometry. The method enables direct 3D reconstruction of river cross-sections and water levels.</p>
+            </section>
 
-        <section id="info">
-            <h2>Event Information</h2>
-            <div class="event-details">
-                <p><strong>Event:</strong> EGU General Assembly 2025</p>
-                <p><strong>Location:</strong> Vienna, Austria</p>
-                <p><strong>Date:</strong> 27 Apr–2 May 2025</p>
-                <p><strong>Session:</strong> <a href="https://meetingorganizer.copernicus.org/EGU25/session/53961">HS1.2.1</a></p>
-                <p><strong>Abstract:</strong> EGU25-9375</p>
-                <p><strong>DOI:</strong> <a href="https://doi.org/10.5194/egusphere-egu25-9375">10.5194/egusphere-egu25-9375</a></p>
-            </div>
-        </section>
-    </main>
+            <section id="methodology" class="section">
+                <h2>Methodology</h2>
+                <div class="image-grid">
+                    <article class="figure-card">
+                        <img src="images/Slide5.PNG" alt="Classical Stereo Processing Pipeline">
+                        <h3>Classical pipeline</h3>
+                        <p class="caption">Key steps in stereo reconstruction using classical photogrammetry.</p>
+                    </article>
+                    <article class="figure-card">
+                        <img src="images/Slide9.PNG" alt="Deep Learning Stereo Processing">
+                        <h3>Deep learning matching</h3>
+                        <p class="caption">Neural-network-assisted feature matching for more robust stereo processing.</p>
+                    </article>
+                </div>
+            </section>
 
-    <style>
-    .image-container {
-        margin: 2rem 0;
-        text-align: center;
-    }
-    
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    
-    .caption {
-        margin-top: 1rem;
-        font-size: 0.9rem;
-        color: var(--secondary-color);
-    }
+            <section id="results" class="section">
+                <h2>Results and applications</h2>
+                <div class="image-grid">
+                    <article class="figure-card">
+                        <img src="images/Slide10.PNG" alt="Z-coordinate Comparison">
+                        <h3>Validation</h3>
+                        <p class="caption">Z-coordinate comparison between models and reference points.</p>
+                    </article>
+                    <article class="figure-card">
+                        <img src="images/Slide14.PNG" alt="Water Level and Discharge Measurement">
+                        <h3>Application</h3>
+                        <p class="caption">Practical water level and discharge measurement workflow.</p>
+                    </article>
+                </div>
+            </section>
 
-    .event-details {
-        background-color: #f8f9fa;
-        padding: 1.5rem;
-        border-radius: 8px;
-        border-left: 4px solid var(--accent-color);
-    }
+            <section id="info" class="section">
+                <h2>Event info</h2>
+                <div class="facts" style="grid-template-columns:repeat(2,minmax(0,1fr));">
+                    <div class="fact"><strong>Session</strong><span><a href="https://meetingorganizer.copernicus.org/EGU25/session/53961" target="_blank" rel="noreferrer">HS1.2.1</a></span></div>
+                    <div class="fact"><strong>Abstract</strong><span>EGU25-9375</span></div>
+                </div>
+            </section>
+        </main>
 
-    .event-details p {
-        margin: 0.5rem 0;
-    }
-
-    .event-details strong {
-        color: var(--primary-color);
-        margin-right: 0.5rem;
-    }
-    </style>
-
-    <footer>
-        <p>© 2025 Author(s). This work is distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a></p>
-        <p>EGU General Assembly 2025</p>
-        <p>DOI: <a href="https://doi.org/10.5194/egusphere-egu25-9375">10.5194/egusphere-egu25-9375</a></p>
-    </footer>
+        <footer class="footer">
+            <p>© 2025 Author(s). Distributed under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">Creative Commons Attribution 4.0 License</a> · <a href="../">Back to home</a></p>
+        </footer>
+    </div>
 </body>
 </html>
