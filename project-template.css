@@ -1,15 +1,17 @@
 :root {
-    --bg: #07111f;
-    --bg-soft: #0d1728;
-    --panel: rgba(13, 23, 40, 0.86);
-    --panel-strong: rgba(8, 14, 26, 0.94);
-    --border: rgba(255, 255, 255, 0.1);
-    --text: #eef4ff;
-    --muted: #a5b2c9;
+    --bg: #f5f7fb;
+    --bg-soft: #edf2f7;
+    --panel: rgba(255, 255, 255, 0.88);
+    --panel-strong: rgba(255, 255, 255, 0.96);
+    --border: rgba(15, 23, 42, 0.08);
+    --text: #10233f;
+    --muted: #5d6b82;
+    --title: #f8fafc;
+    --subtitle: #e2e8f0;
     --accent: #8be1ff;
     --accent-2: #c084fc;
     --accent-3: #f5a524;
-    --shadow: 0 24px 70px rgba(1, 6, 14, 0.42);
+    --shadow: 0 24px 70px rgba(15, 23, 42, 0.08);
 }
 
 * {
@@ -25,9 +27,9 @@ body {
     font-family: "Inter", sans-serif;
     color: var(--text);
     background:
-        radial-gradient(circle at top left, rgba(139, 225, 255, 0.14), transparent 28%),
-        radial-gradient(circle at top right, rgba(192, 132, 252, 0.12), transparent 24%),
-        linear-gradient(160deg, #050b14 0%, var(--bg) 48%, #0c1220 100%);
+        radial-gradient(circle at top left, rgba(139, 225, 255, 0.28), transparent 24%),
+        radial-gradient(circle at top right, rgba(192, 132, 252, 0.16), transparent 22%),
+        linear-gradient(160deg, #ffffff 0%, var(--bg) 40%, #eef3f8 100%);
     min-height: 100vh;
 }
 
@@ -35,24 +37,32 @@ body[data-theme="pond"] {
     --accent: #84e1ff;
     --accent-2: #34d399;
     --accent-3: #22c55e;
+    --title: #f8fafc;
+    --subtitle: #e2e8f0;
 }
 
 body[data-theme="river"] {
     --accent: #8be1ff;
     --accent-2: #60a5fa;
     --accent-3: #38bdf8;
+    --title: #f8fafc;
+    --subtitle: #e2e8f0;
 }
 
 body[data-theme="tree"] {
     --accent: #86efac;
     --accent-2: #4ade80;
     --accent-3: #22c55e;
+    --title: #f8fafc;
+    --subtitle: #e2e8f0;
 }
 
 body[data-theme="brazil"] {
     --accent: #fbbf24;
     --accent-2: #fb7185;
     --accent-3: #f97316;
+    --title: #f8fafc;
+    --subtitle: #e2e8f0;
 }
 
 a {
@@ -116,12 +126,13 @@ a {
     font-size: clamp(2.2rem, 5vw, 4.2rem);
     line-height: 0.98;
     letter-spacing: -0.05em;
+    color: var(--title);
 }
 
 .subtitle {
     max-width: 54ch;
     margin: 0;
-    color: var(--muted);
+    color: var(--subtitle);
     line-height: 1.75;
     font-size: 1rem;
 }
@@ -138,10 +149,10 @@ a {
 .section,
 .figure-card,
 .link-card {
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border);
     border-radius: 22px;
-    background: rgba(255, 255, 255, 0.035);
-    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.2);
+    background: var(--panel);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
 }
 
 .fact {
@@ -166,23 +177,23 @@ a {
 
 .hero-panel {
     padding: 1rem;
-    background: linear-gradient(135deg, rgba(139, 225, 255, 0.1), rgba(192, 132, 252, 0.06)), rgba(255, 255, 255, 0.02);
+    background: linear-gradient(135deg, rgba(139, 225, 255, 0.14), rgba(192, 132, 252, 0.08)), var(--panel);
 }
 
 body[data-theme="pond"] .hero-panel {
-    background: linear-gradient(135deg, rgba(52, 211, 153, 0.12), rgba(132, 225, 255, 0.07)), rgba(255, 255, 255, 0.02);
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.16), rgba(132, 225, 255, 0.1)), var(--panel);
 }
 
 body[data-theme="river"] .hero-panel {
-    background: linear-gradient(135deg, rgba(96, 165, 250, 0.12), rgba(139, 225, 255, 0.07)), rgba(255, 255, 255, 0.02);
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.16), rgba(139, 225, 255, 0.1)), var(--panel);
 }
 
 body[data-theme="tree"] .hero-panel {
-    background: linear-gradient(135deg, rgba(74, 222, 128, 0.12), rgba(134, 239, 172, 0.07)), rgba(255, 255, 255, 0.02);
+    background: linear-gradient(135deg, rgba(74, 222, 128, 0.16), rgba(134, 239, 172, 0.1)), var(--panel);
 }
 
 body[data-theme="brazil"] .hero-panel {
-    background: linear-gradient(135deg, rgba(251, 191, 36, 0.12), rgba(249, 115, 22, 0.08)), rgba(255, 255, 255, 0.02);
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.16), rgba(249, 115, 22, 0.1)), var(--panel);
 }
 
 .hero-panel h2,
@@ -231,8 +242,8 @@ body[data-theme="brazil"] .button.primary {
 .button.secondary,
 .nav a,
 .link-card a {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid var(--border);
     color: var(--text);
 }
 
@@ -298,7 +309,7 @@ body[data-theme="brazil"] .button.primary {
     margin-bottom: 0.8rem;
     padding: 0.28rem 0.58rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(15, 23, 42, 0.05);
     color: var(--muted);
     font-size: 0.77rem;
     letter-spacing: 0.03em;
